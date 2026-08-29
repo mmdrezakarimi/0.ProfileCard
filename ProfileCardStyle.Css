@@ -21,15 +21,33 @@ body{
     inset: 1;
     width: fit-content;
     margin: 100px;
-    background-color: aqua;
+    background:radial-gradient(#444 , #999);
     border: solid 5px whitesmoke;
     border-radius: 20px;
     padding: 100px;
+     transition: transform 0.3s ease;
+}
+.profile{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 .profile img{
     /* border: solid; */
+    position: relative;
     border-radius: 1000px;
     width: 400px;
     height: 400px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.profile img:hover{
+    /* width: 600px;
+    height: 600px; */
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 45, 0.9);
+}
+.card:hover{
+     transform: scale(1.2);
+     box-shadow: 0 10px 25px rgba(0, 0, 35, 0.9);
 }
